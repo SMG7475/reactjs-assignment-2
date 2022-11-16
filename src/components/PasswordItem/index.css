@@ -10,12 +10,13 @@
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   border-color: aliceblue;
   border-style: solid;
-  width: fit-content;
   padding: 10px;
   margin: 10px;
+  width: 300px;
 }
 .vals {
 }

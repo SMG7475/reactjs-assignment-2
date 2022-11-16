@@ -63,7 +63,7 @@ class PasswordManager extends Component {
           <div className="top-container">
             <div className="form-container">
               <form id="form" className="form" onSubmit={this.onSubmibmission}>
-                <p>Add New Password</p>
+                <h1>Add New Password</h1>
                 <div className="website-input">
                   <img
                     className="input-image"
@@ -99,8 +99,8 @@ class PasswordManager extends Component {
                   <input
                     id="password"
                     className="input"
-                    type="text"
-                    placeholder="Enter Website"
+                    type="password"
+                    placeholder="Enter Password"
                   />
                 </div>
                 <button type="submit" className="add-button">
@@ -116,7 +116,10 @@ class PasswordManager extends Component {
           </div>
           <div className="bottom-container">
             <div className="bottom-header">
-              <p>Your Passwords {lengthOfList}</p>
+              <div className="length">
+                <h1>Your Passwords</h1>
+                <p className="length-of-list">{lengthOfList}</p>
+              </div>
               <div className="bottom-search-input-container">
                 <img
                   className="input-image"
@@ -140,11 +143,14 @@ class PasswordManager extends Component {
             </div>
             <div className="no-passwords-container">
               {lengthOfList === 0 && (
-                <img
-                  className="no-passwords-image"
-                  src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png "
-                  alt="no passwords"
-                />
+                <div className="no-password-container">
+                  <p>No Passwords</p>
+                  <img
+                    className="no-passwords-image"
+                    src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png "
+                    alt="no passwords"
+                  />
+                </div>
               )}
             </div>
             <ul className="list-container">

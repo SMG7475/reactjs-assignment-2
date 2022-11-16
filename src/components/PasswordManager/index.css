@@ -42,6 +42,7 @@
 }
 .input {
   border-style: none;
+  width: 250px;
 }
 .add-button {
   width: fit-content;
@@ -90,4 +91,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+.length {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.no-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.length-of-list {
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 500;
 }
